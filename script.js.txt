@@ -1,0 +1,17 @@
+const flights = [
+  { id: 1, name: "Hyderabad → Delhi" },
+  { id: 2, name: "Chennai → Mumbai" },
+  { id: 3, name: "Bangalore → Goa" }
+];
+
+const list = document.getElementById("flights");
+
+flights.forEach(flight => {
+  const li = document.createElement("li");
+  li.innerHTML = `${flight.name} <button onclick="bookFlight()">Book</button>`;
+  list.appendChild(li);
+});
+
+function bookFlight() {
+  alert("Flight Booked Successfully (Demo)");
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Booking App</title>
+</head>
+<body>
+  <h1>Flight Booking Application</h1>
+
+  <h3>Available Flights</h3>
+  <ul id="flights"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
