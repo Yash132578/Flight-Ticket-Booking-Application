@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlyBook - Flight Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>✈️ FlyBook</h2>
+</nav>
+
+<div class="container">
+
+  <h1>Search Flights</h1>
+
+  <input id="from" list="cities" placeholder="From">
+  <input id="to" list="cities" placeholder="To">
+
+  <datalist id="cities">
+    <option value="Hyderabad">
+    <option value="Bangalore">
+    <option value="Chennai">
+    <option value="Delhi">
+    <option value="Mumbai">
+  </datalist>
+  <label>Departure Date</label>
+<input type="date" id="date">
+
+  <button onclick="searchFlights()">Search</button>
+
+  <div id="results"></div>
+
+</div>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <h2>Booking Details</h2>
+    <p id="flightInfo"></p>
+    <button onclick="goToPayment()">Proceed to Payment</button>
+  </div>
+</div>
+
+<!-- PAYMENT MODAL -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <h2>Payment Section 💳</h2>
+
+    <input placeholder="Card Number">
+    <input placeholder="Card Holder Name">
+    <input placeholder="CVV">
+
+    <button onclick="confirmPayment()">Pay Now</button>
+  </div>
+</div>
+<div id="flightContainer"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
